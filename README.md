@@ -14,4 +14,10 @@ This repository is the starter code for the project: Students will fork and clon
 ## Dependencies
 
 - Express
-- Node 5.10.x or above
+- Node 5.10.x or above 
+
+##Screenshots 
+
+!["Screenshot of URLs page"](https://github.com/tweeter/blob/master/docs/Main.png)
+!["Screenshot of URLs page"](https://github.com/tweeter/blob/master/docs/Teblet.png)
+
