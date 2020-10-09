@@ -1,0 +1,29 @@
+
+
+.navbar { 
+  position: fixed;
+  width:100%;
+  color:#ffff;
+  height: 120px;
+  background-color: #4056a1;
+}
+
+.newtweet{
+  float:right;
+  margin-right:2em;
+}
+
+.logo {
+  position: relative;
+  top:2em;
+  font-size: 1.5em;
+  font-family: 'Bungee';
+  margin-left: 2em;
+} 
+
+.header-icon{
+  font-size: 1.5em;
+  float:right;
+  margin-right:4em;
+
+}

@@ -17,7 +17,22 @@ html {
 body {
   color: #545149;
   background-color: #f4f1ec;
+  font-family: 'Source Sans Pro';
   font-size: 24px;
+}
+
+.container {
+  margin: auto;
+  width:90%; 
+  background-color: #f4f1ec;
+  height:600px; 
+
+}
+
+section#tweets{
+  margin-left: auto;
+  margin-right: auto;
+  width:80%; 
 }
 
 /*

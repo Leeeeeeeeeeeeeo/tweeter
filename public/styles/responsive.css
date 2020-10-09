@@ -1,0 +1,47 @@
+
+@media only screen and (min-width: 1025px) {
+  .parent{
+    display: flex;
+  }
+
+  .userprofile { 
+    margin-top:8em;
+    margin-left: 2em;
+    background-color: rgb(250, 196, 114);
+    width: 35%;
+    flex-grow: 0;
+  } 
+ 
+  .container{
+    margin-top:6em;
+    
+  }
+
+  section#tweets{
+    width:105%;
+    margin-top:2em;
+  }
+
+
+
+.tweetsection{
+  flex-grow: 2;
+
+}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .navbar { 
+    background-color: rgb(250, 196, 114);
+    color: #545149;
+  }
+  .tweetsicon{  
+    margin-left:60%;
+} 
+
+#tweets{
+  margin-top:2em;
+}
+} 
+

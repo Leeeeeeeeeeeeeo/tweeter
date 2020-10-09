@@ -1,0 +1,55 @@
+
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+  .userinput{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 35em;
+}
+
+ .textAboveForm {
+  font-weight: bold;
+  margin-left: 12%
+ }
+
+.inputtalbe{  
+  outline-width: 0;
+  background-color: #f4f1ec; 
+  border: 0;
+  border-bottom: 3px solid #545149;
+  width: 80%; 
+  
+} 
+
+.btn.tweet{
+  background-color: #4056a1;
+  font-family: 'Bungee';
+  color:#f4f1ec;
+  border-radius: 4px;
+  margin-top: 1em ;
+  margin-left: 10%;
+} 
+
+.belowinput{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right:10%
+}
+
+.counter{ 
+  font-family: 'Bungee';
+}
+
+.err {
+  color:red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+

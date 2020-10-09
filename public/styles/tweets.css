@@ -1,0 +1,50 @@
+section#tweets{
+  padding: 0.5em;
+} 
+
+.newarticle:hover {
+  text-shadow: 0px 0px 1px  black;
+  box-shadow: 10px 10px 5px  #4056a1;
+}
+
+.tweetsection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hiddenText{
+    color:#f4f1ec; 
+    margin-left: 85%;
+}
+
+.newarticle:hover .hiddenText{
+  color:#4056a1
+}
+
+.name{
+  position: relative;
+  bottom: 1em;
+}
+
+hr{
+  border: 2px solid #545149;
+
+} 
+
+.content{
+  margin-top:3.5em;
+} 
+
+.tweetsfooter{
+  display:flex;
+  justify-content: space-between;
+  font-size:0.7em;
+  margin-left: 0.5em;
+}
+  
+
+.newarticle{ 
+  padding:15px;
+  border: 3px solid #545149;
+  margin-bottom: 30px;
+}

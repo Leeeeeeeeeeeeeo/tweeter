@@ -1,29 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta Information -->
+
+  <head > 
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
     <title>Tweeter - Home Page</title>
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/navbar.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/responsive.css" type="text/css" />
+
+
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
-  </head>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
+  </head>
   <body>
-    <!-- Top nav bar (fixed) -->
-    <nav>
-      <span>tweeter</span>
+    <header>
+    <nav class = " navbar">
+      <span class = "logo">tweeter</span> 
+
+        <span class = "newtweet"><strong>Write</strong> a new tweet</span>
+        <br>
+        <ion-icon class = "header-icon"name="bulb-outline"></ion-icon> 
     </nav>
+  </header>
+
+  <section class= "parent"> 
+        <!-- User profile -->
+      <section class= "child userprofile">
+        <div class = "userimage">
+          <img  src="/images/profile-hex.png"> 
+        </div>
+       <br>
+        <div class = "username">
+          <h2>Olivia Bailey</h2>
+        </div>
+      </section>
 
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <section class ="child tweetsection">
+      <main class="container"> 
+        <p class = "err errorMassage1"></p>
+        <p class = "err errorMassage2"> </p>
+        <p class = "textAboveForm">  What are you humming about?</p>
+          <form class = "userinput" action="/tweets/"  method= "POST">
+             <textarea class = "inputtalbe" name="text" id="tweet-text" ></textarea> 
+         </form>
+         <div class = "belowinput">
+         <button type="submit" class= "btn tweet">Tweet</button>
+         <span name="counter" class="counter" for="tweet-text">140</span>
+        </div>
+      <section id="tweets">
+      </section>
+    </main>
+  </section>
+</section>
+
+
+     
   </body>
 </html>
