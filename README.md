@@ -18,6 +18,6 @@ This repository is the starter code for the project: Students will fork and clon
 
 ##Screenshots 
 
-!["Screenshot of URLs page"](https://github.com/tweeter/blob/master/docs/Main.png)
-!["Screenshot of URLs page"](https://github.com/tweeter/blob/master/docs/Teblet.png)
+!["Screenshot of URLs page"](https://github.com/Leeeeeeeeeeeeeo/tweeter/blob/master/docs/Main%20page%20.png)
+!["Screenshot of URLs page"](https://github.com/Leeeeeeeeeeeeeo/tweeter/blob/master/docs/Teblet%20size.png)
 

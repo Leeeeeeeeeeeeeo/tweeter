@@ -6,7 +6,24 @@
 
 // const { json } = require("body-parser");
 
+
+
+
 $(document).ready(function() {
+
+
+const reload = function(){
+  $.ajax ({
+    method: "GET",
+    url:"/tweets/",
+    dataType: "json",
+    success: function(result){
+      renderTweets(result)
+      }
+    })
+  }
+reload()
+
 
  const data = [
     {
@@ -44,7 +61,7 @@ const createTweetElement = function(tweetData) {
   <a class = "hiddenText">${tweetData.user.handle}</a>
   <p class = "content">${tweetData.content.text}</p>
   <hr>
-  <footer class ="tweetsfooter"> ${tweetData.created_at}
+  <footer class ="tweetsfooter"> ${new Date(tweetData.created_at)}
   <div class = "tweetsicon" >
   <ion-icon name="flag"> </ion-icon>
   <ion-icon  name="repeat"> </ion-icon>
@@ -62,9 +79,6 @@ const renderTweets = function(tweets) {
     $("#tweets").prepend(createTweetElement(i))
   }
 }
-
-renderTweets(data);
-
 
 /* 
 The function will first to validate if the tweet is qualifying, if not, shows the error message.
@@ -93,13 +107,14 @@ $(".btn.tweet").on('click', function () {
               url:"/tweets/",
               dataType: "json",
               success: function(result){
-                $("#tweets").empty();
                 renderTweets(result);
-              }
+              }             
             })
           }});   
     }
   })  
 });
+
+
 
 
